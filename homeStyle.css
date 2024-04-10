@@ -1,0 +1,53 @@
+
+:root{
+   font-family: "Raleway", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+*{
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+
+}
+
+
+
+iframe {
+   width: 100vw;
+   height: 100vh;
+   border: none;
+}
+
+#navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 50%;
+   background-color: transparent; /* Set to transparent so that it doesn't cover the content */
+   padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   z-index: 1000;
+}
+
+#navbar button {
+   background-color: rgba(255, 255, 255, 0.2); /* White with opacity */
+   border: none;
+   color: black; /* Initial text color */
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s, transform 1s; /* Add smooth transition effects */
+   padding: 10px 20px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for a 3D effect */
+}
+
+#navbar button:hover {
+   background-color: rgba(255, 255, 255, 1); /* White without opacity on hover */
+   transform: translateY(-2px); /* Move the button up slightly on hover for a pressed effect */
+}
+
+

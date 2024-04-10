@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color:#000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  background: white;
+  height: 5%;
+  margin: 10px;
+  padding: 10px;
+}
+.text-content {
+  text-align: center;
+  flex: 1;
+}
+
+.swiper-container {
+  flex: 1;
+  margin-right: 20px; 
+  width: 50%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 800px;
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    .item {
+      flex: 1;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transition: all 0.8s ease;
+      &:hover {
+        flex: 7;
+      }
+    }
+  }
+}
+
+
+
+.wrap-effect-4 {
+  .item {
+    &:hover {
+      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+   
+      filter: saturate(2) contrast(120%);
+    }
+    &:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/1161517/screenshots/7896076/media/24ae74ddb6c9eb7789ae3a189a6b30ae.gif');
+      /* background-image: url('https://cdnl.iconscout.com/lottie/premium/thumb/ios-8326800-6633924.gif'); */
+
+      
+    }
+    &:nth-of-type(2) {
+      /* background-image: url('https://cdnl.iconscout.com/lottie/premium/thumb/ios-8326800-6633924.gif'); */
+      background-image: url('https://cdn.dribbble.com/userupload/2608299/file/original-00f24643a2c18bc04251f7a2019d4743.gif');
+    
+    }
+    &:nth-of-type(3) {
+      /* background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5431797/galshir-lemonade-ring.gif'); */
+      background-image: url('https://cdn.dribbble.com/users/941326/screenshots/7319948/media/608aeb65e9c7bd84cbbde5e1f2260631.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdnl.iconscout.com/lottie/premium/thumb/flutter-9077968-7440058.gif');
+    }
+    &:last-of-type {
+      /* background-image: url('https://cdn.dribbble.com/users/1299339/screenshots/16791438/media/bb38f6ba34065620350b30ba00dc28dd.gif'); */
+      /* background-image: url('https://cdnl.iconscout.com/lottie/premium/thumb/uiux-design-animation-5790484-4849264.gif'); */
+      background-image: url('https://cdn.dribbble.com/users/1199152/screenshots/14595854/media/1f35b9afe1c874370e5196a57145f5eb.gif');
+    }
+  }
+}
+
+.inspire {
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration:none;
+  margin: 10px;
+  padding: 10px;
+  &:after {
+    background-color:#38ef7d ;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  &:hover {
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0)
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0;url=./home.html">
+    <title>Redirecting to Home Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+   
+    <style>
+  
+        @media only screen and (max-width: 1000px) and (max-height: 450px) {
+           
+            body {
+                background-color: red;
+                text-align: center;
+            }
+         
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Optional: You can provide a message or content here if needed -->
+    <p>If you are not redirected, <a href="./home.html">click here</a>.</p>
+
+    <script>
+        // Check screen size and redirect accordingly
+        if (window.innerWidth <= 1000 && window.innerHeight <= 450) {
+            window.location.href = 'contact.html';
+        } else {
+            window.location.href = 'home.html';
+        }
+    </script>
+</body>
+</html>

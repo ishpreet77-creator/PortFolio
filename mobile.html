@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon for Mobile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden; /* Hide scrollbars */
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1; /* Move the video to the background */
+        }
+
+        .message-container {
+            position: relative;
+            z-index: 1; /* Bring the message container to the front */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .desktop-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .desktop-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+   
+    <video autoplay loop muted>
+        <source src="./pexels-erik-mclean-6323166 (2160p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="message-container">
+        <h1>Coming Soon for Mobile</h1>
+        <p>Please open this site on a desktop for the best experience.</p>
+    </div>
+
+    <script>
+        function redirectToMobile() {
+           // Redirect to a specific URL for mobile devices
+           window.location.href = 'https://www.youtube.com/watch?v=dElvdol3xsg';
+        }
+  
+      
+     </script>
+</body>
+
+</html>

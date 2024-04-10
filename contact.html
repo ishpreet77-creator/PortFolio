@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        @font-face {
+            font-family: 'CustomFont1';
+            src: url('./assets/Fonts/Dekko-Regular.ttf') format('truetype');
+            /* Specify the path to your font file */
+        }
+
+        @font-face {
+            font-family: 'CustomFont2';
+            src: url('./assets/Fonts/Mynerve-Regular.ttf') format('truetype');
+            /* Specify the path to your font file */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+
+        .avatar {
+            width: 160px;
+            /* Increased avatar size */
+            height: 160px;
+            /* Increased avatar size */
+            border-radius: 50%;
+            background-color: #ccc;
+            margin-top: 20px;
+            margin: 0 auto 20px;
+            background-image: url('https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg');
+            /* Add your image URL here */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .label {
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+            /* Increased spacing */
+            font-family: "CustomFont1";
+            /* Font family */
+            font-size: 16px;
+            /* Font size */
+        }
+
+        .label2 {
+            color: black;
+            text-align: center;
+            margin-top: 30px;
+
+            font-family: "CustomFont2";
+            /* Font family */
+            font-size: 24px;
+            /* Font size */
+
+        }
+
+        .contact-item {
+            display: inline-block;
+            margin-right: 60px;
+            text-align: center;
+        }
+
+      
+
+        .icon-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .icon-button img {
+            width: 30px;
+            height: auto;
+        }
+
+        .icon-button img:hover {
+            opacity: 0.7;
+        }
+
+        .buttons {
+            padding-top: 60px;
+            text-align: center;
+
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        /* .email{
+            text-align: center;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div>
+
+        <div class="avatar"></div>
+
+        <div class="label2">John Doe</div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <div>
+                    <img src="./assets/telephone.png" alt="Phone Icon"
+                    style="width: 74px; height: 60px; object-fit: inherit;">
+                <div class="label">Phone</div>
+                </div>
+               
+                <div class="label2">+1234567890</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="email">
+                    <img src="./assets/mail.png" alt="Email Icon" style="width: 74px; height: 60px; object-fit: inherit; ">
+                    <div class="label">Email</div>
+                </div>
+                
+                <div class="label2">john.doe@example.com</div>
+            </div>
+
+            <div class="contact-item">
+                <div>
+                    <img src="./assets/location.png" alt="Location Icon"
+                    style="width: 74px; height: 60px; object-fit: contain;">
+                <div class="label">Address</div>
+                </div>
+               
+                <div class="label2">India</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="icon-button" onclick="window.open('https://discord.com/', '_blank')">
+                <img src="./assets/discord.png" alt="Discord Icon">
+            </button>
+            <button class="icon-button" onclick="window.open('https://github.com/', '_blank')">
+                <img src="./assets/github.png" alt="GitHub Icon">
+            </button>
+            <button class="icon-button" onclick="window.open('https://www.linkedin.com/', '_blank')">
+                <img src="./assets/linkedin.png" alt="LinkedIn Icon">
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

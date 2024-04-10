@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "stylus": "^0.62.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.4",
+    "@babel/core": "^7.23.7",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0"
+  },
+  "scripts": {
+    "build": "babel 3design.js -o design.js",
+    "build": "babel 3dAbout.js -o myabout3dDesign.js"
+  }
+}

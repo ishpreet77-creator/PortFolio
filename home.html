@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+   <!-- <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"> -->
+   <link rel="icon" type="image/png" href="/assets/github.png">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+   <link rel="stylesheet" href="./homeStyle.css">
+</head>
+
+<body>
+   <div class="nav-buttons" id="navbar">
+      <button data-target="home" onclick="scrollToSection('home')">Home</button>
+      <button data-target="about" onclick="scrollToSection('about')">About</button>
+      <button data-target="skills" onclick="scrollToSection('skills')">Skills</button>
+      <button data-target="service" onclick="scrollToSection('service')">Service</button>
+      <button data-target="portfolio" onclick="scrollToSection('portfolio')">Portfolio</button>
+      <button data-target="contact" onclick="scrollToSection('contact')">Contact</button>
+   </div>
+   <div id="home">
+      <iframe src="./wecome.html"></iframe>
+   </div>
+  <div id="about">
+   <iframe src="3dAbout/3dAbout.html"></iframe>
+  </div>
+  <div id="skills">
+   <iframe src="./SkilsSelection/skilsSection.html"></iframe>
+  </div>
+  <div id="service">
+   <iframe src="./Services/servicesection.html"></iframe>
+  </div>
+  <div id="portfolio">
+   <iframe src="./slider.html"></iframe>
+  </div>
+  <div id="contact">
+   <iframe src="./contact.html" style="height: 70vh; border: none;"></iframe>
+  </div>
+
+  <script>
+      function scrollToSection(sectionId) {
+         const section = document.getElementById(sectionId);
+         if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest', duration: 1000 });
+         }
+      }
+
+      window.addEventListener('scroll', updateNavbarStyles);
+
+      function updateNavbarStyles() {
+         const navbar = document.getElementById('navbar');
+         const buttons = navbar.getElementsByTagName('button');
+         const sections = document.querySelectorAll('body > div[id]');
+
+         let activeSectionIndex = -1;
+
+         sections.forEach((section, index) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= 50 && rect.bottom >= 50) {
+               activeSectionIndex = index;
+            }
+         });
+
+         if (activeSectionIndex !== -1) {
+            const colorMap = ['orange', 'orange', 'red', 'green', 'blue', 'yellow',];
+
+            for (let i = 0; i < buttons.length; i++) {
+               buttons[i].style.color = colorMap[activeSectionIndex];
+            }
+         }
+      }
+   </script>
+</body>
+
+</html>
