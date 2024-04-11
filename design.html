@@ -5,9 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>design</title>
-    <link rel="stylesheet" href="design.css" />s
+    <link rel="stylesheet" href="./FlutterSection/design.css" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <style>
+        @media only screen and (max-width: 1000px) and (max-height: 1000px) {
+           body {
+              position: relative;
+           }
+           @font-face {
+              font-family: 'CustomFont1';
+              src: url('./assets/Fonts/Dekko-Regular.ttf') format('truetype');
+              /* Specify the path to your font file */
+          }
+  
+          @font-face {
+              font-family: 'CustomFont2';
+              src: url('./assets/Fonts/Mynerve-Regular.ttf') format('truetype');
+              /* Specify the path to your font file */
+          }
+  
+           body::before {
+              content: "Display size is not applicable";
+  
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgb(255, 255, 255);
+              color: black;
+          
+              background-image: url("./assets/screenSize.jpg");
+      background-size: cover; 
+      background-position: center;
+              
+              z-index: 9999;
+           
+           }
+  
+           body {   
+              
+              text-align: center;
+              font-size: 24px;
+              font-family: "CustomFont2";
+              
+             
+           }
+        }
+     </style>
 
 </head>
 <body>
@@ -88,6 +133,6 @@
         </div>
     </div>
 </div>
-<script src="./design.js"></script>
+<script src="./FlutterSection/design.js"></script>
 </body>
 </html>

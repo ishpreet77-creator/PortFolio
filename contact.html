@@ -162,6 +162,19 @@
             </button>
         </div>
     </div>
+    <script>
+         window.addEventListener('resize', redirectToPage);
+        // Function to redirect to another page based on screen size
+        function redirectToPage() {
+            // Redirect if screen size is less than or equal to 1000x1000
+            if (window.innerWidth <= 1000 && window.innerHeight <= 1000) {
+                window.location.href = './contact.html';
+            }else{
+               window.location.href = './home.html';
+            }
+        }
+
+    </script>
 </body>
 
 </html>
