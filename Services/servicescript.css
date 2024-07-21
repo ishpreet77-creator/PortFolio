@@ -132,8 +132,15 @@ body {
             transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out; }
           body .options .option .label .info .main {
             font-weight: bold;
+            
             font-size: 1.2rem; }
           body .options .option .label .info .sub {
-            transition-delay: .1s; }
+            transition-delay: .1s;
+          text-align: left; }
+          .sub{
+            margin-bottom: 50;
+            margin-top: 0;
+          }
+          
 
 /*# sourceMappingURL=servicescript.css.map */

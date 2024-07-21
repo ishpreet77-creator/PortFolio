@@ -123,7 +123,7 @@ const init = () => {
   attachListeners();
   setInterval(() => {
     spin(1); // You can adjust the spin direction (1 for forward, -1 for backward)
-  }, 5000);
+  }, 10000);
 };
 $(() => {
   init();
